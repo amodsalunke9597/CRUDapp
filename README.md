@@ -1,4 +1,4 @@
-# neurolab-nodejs
+# lab-nodejs
 
 Command to run server.js file:
 
