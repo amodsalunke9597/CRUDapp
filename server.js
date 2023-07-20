@@ -1,10 +1,7 @@
-// Hello World in Nodejs
+const app = require('./app.js')
 
-var http = require('http');  
-  
-http.createServer(function (req, res) {
-    res.write('Hello World!');
-    res.end();
-}).listen(4000);
-  
-console.log('Server running at 4000');
+const port = process.env.port || 4001
+
+app.listen(port, () => {
+    console.log(`Server is running on Port ${port}`);
+})
